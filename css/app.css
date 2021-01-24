@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,300&display=swap');
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+}
+
+section
+{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  background: #E6E6E6;
+}
+
+section .circle
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #FF644F;
+  clip-path: circle(75% at right -20%);
+}
+
+header
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 35px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo
+{
+  position: relative;
+  max-width: 100px;
+}
+
+header .navigation
+{
+  position: relative;
+  display: flex;
+}
+
+header .navigation li
+{
+  list-style: none;
+}
+
+header .navigation li a
+{
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font-weight: 600;
+  margin-left: 60px;
+  font-size: 1.5em;
+}
+
+header .navigation li:first-child a
+{
+  margin-left: 0;
+}
+
+.content
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content .textBox
+{
+  position: relative;
+  max-width: 570px;
+  margin-right: 20px;
+}
+
+.content .textBox h2
+{
+  font-size: 3em;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 10px;
+  line-height: 1.4em;
+}
+
+.content .textBox p
+{
+  color: #000;
+}
+
+.content .textBox a
+{
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #FF644F;
+  color: #fff;
+  border-radius: 45px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.social
+{
+  position: absolute;
+  bottom: 45px;
+  left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social li
+{
+  list-style: none;
+}
+
+.social li a
+{
+  display: inline-block;
+  margin-left: 15px;
+  background: #222;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 2.75em;
+  color: #fff;
+  border-radius: 50%;
+  transition: 0.5s ease-in-out;
+}
+
+.social li:first-child a
+{
+  margin-left: 0;
+}
+
+.social li a:hover
+{
+  background: #FF644F;
+  transform: translateY(-10px);
+}
+
+/* Slider */
+
+.swiper-container
+{
+  width: 675px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.swiper-slide
+{
+  background-position: center;
+  background-size: cover;
+  width: 335px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+}
+
+.content .imgBox
+{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content .imgBox img
+{
+  max-width: 85%;
+}
+
+.swiper-slide img
+{
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+  max-height: 100%;
+}
+
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right
+{
+  background-image: none;
+}
+
+/* Responsive */
