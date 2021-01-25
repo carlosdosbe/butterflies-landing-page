@@ -206,4 +206,27 @@ header .navigation li:first-child a
   background-image: none;
 }
 
+.swiper-slide h4
+{
+  position: absolute;
+  background: rgba(0, 0, 0, 0.2);
+  bottom: 25px;
+  padding: 5px 15px;
+  border-radius: 25px;
+  color: #fff;
+}
+
+footer
+{
+  position: absolute;
+  bottom: 0;
+  padding: 25px 0;
+}
+
+footer p
+{
+  color: rgba(0, 0, 0, 0.25);
+  font-size: .85em;
+}
+
 /* Responsive */
