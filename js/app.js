@@ -1,3 +1,13 @@
+//Toggle
+function toggle()
+{
+  const menu = document.querySelector('.toggle');
+  const navigation = document.querySelector('.navigation');
+  menu.classList.toggle('active');
+  navigation.classList.toggle('active');
+}
+
+//Slider
 var swiper = new Swiper('.swiper-container', {
   effect: 'coverflow',
   grabCursor: true,

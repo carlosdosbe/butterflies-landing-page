@@ -161,6 +161,11 @@ header .navigation li:first-child a
   transform: translateY(-10px);
 }
 
+ul.social2
+{
+  display: none;
+}
+
 /* Slider */
 
 .swiper-container
@@ -230,3 +235,163 @@ footer p
 }
 
 /* Responsive */
+
+@media(max-width: 1050px)
+{
+  header
+  {
+    padding: 40px;
+  }
+
+  header .navigation
+  {
+    display: none;
+  }
+
+  header .navigation.active
+  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FF644F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+
+  header .navigation.active li a
+  {
+    margin: 0;
+  }
+
+  header .navigation.active li
+  {
+    margin-bottom: 15px;
+  }
+
+  header .navigation.active li:last-child
+  {
+    margin: 0;
+  }
+
+  ul.social2
+  {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 45px;
+    z-index: 1001;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-50%);
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  ul.social2 li
+  {
+    margin-bottom: 0!important;
+    margin-left: 0;
+    margin-right: 15px;
+  }
+
+  ul.social2 li:last-child
+  {
+    margin: 0;
+  }
+
+  ul.social2 li a
+  {
+    font-size: 2em;
+  }
+
+  .toggle
+  {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: url('../img/menu.png');
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 1002;
+  }
+
+  .toggle.active
+  {
+    position: fixed;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background: url('../img/close.png');
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  section
+  {
+    padding: 150px 40px;
+  }
+
+  .social
+  {
+    left: 20px;
+  }
+
+  .content
+  {
+    flex-direction: column;
+  }
+
+  .content .textBox, .content .imgBox
+  {
+    max-width: 100%;
+  }
+
+  .swiper-slide
+  {
+    width: 100%;
+    height: 300px;
+  }
+
+  .swiper-slide
+  {
+    width: 60%;
+  }
+
+  .content .imgBox img
+  {
+    max-width: 70%;
+  }
+
+  .content .textBox h2
+  {
+    font-size: 1.75em;
+    color: #fff;
+  }
+
+  .content .textBox p
+  {
+    font-size: .85em;
+  }
+
+  .social
+  {
+    bottom: 75px;
+    left: 40px;
+  }
+
+  .social li a
+  {
+    width: 40px;
+    height: 40px;
+    font-size: 1.75em;
+  }
+}
